@@ -29,6 +29,6 @@ export const profile = {
     email: "gokulandtech@gmail.com", // Placeholder
     github: "https://github.com/Garuda-n", // Placeholder
     linkedin: "https://www.linkedin.com/in/gokulandtech/", // Placeholder
-    resume: "/Gokul.pdf" // Placeholder
+    resume: import.meta.env.BASE_URL + "Gokul.pdf" // Placeholder
   }
 };
