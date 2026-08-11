@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex items-center gap-6 text-sm font-medium">
           <a href="#home" className="text-muted hover:text-primary transition-colors">Home</a>
           <a href="#projects" className="text-muted hover:text-primary transition-colors">Projects</a>
-          <a href={profile.contact.email} className="text-muted hover:text-primary transition-colors">Contact</a>
+          <a href={`mailto:${profile.contact.email}`} className="text-muted hover:text-primary transition-colors">Contact</a>
         </div>
       </div>
     </footer>

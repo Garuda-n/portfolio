@@ -30,7 +30,7 @@ export default function Contact() {
           className="flex flex-wrap justify-center items-center gap-6"
         >
           <a
-            href={profile.contact.email}
+            href={`mailto:${profile.contact.email}`}
             className="flex items-center gap-2 px-8 py-4 bg-primary text-black font-semibold rounded-lg hover:bg-primary-hover hover:scale-105 transition-all shadow-[0_0_20px_rgba(0,229,255,0.3)]"
           >
             <Mail className="w-5 h-5" />

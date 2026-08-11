@@ -99,7 +99,7 @@ export default function Navbar() {
               <a href={profile.contact.linkedin} className="text-muted hover:text-white">
                 <FaLinkedin className="w-6 h-6" />
               </a>
-              <a href={profile.contact.email} className="text-muted hover:text-white">
+              <a href={`mailto:${profile.contact.email}`} className="text-muted hover:text-white">
                 <Mail className="w-6 h-6" />
               </a>
             </div>
