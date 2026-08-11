@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0a0a0a;
+  --color-foreground: #ededed;
+  --color-primary: #00e5ff; /* Cyan accent */
+  --color-primary-hover: #00b8cc;
+  --color-surface: #171717;
+  --color-surface-hover: #262626;
+  --color-border: #333333;
+  --color-muted: #a3a3a3;
+  
+  --font-sans: 'Inter', system-ui, sans-serif;
+  
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+  
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Smooth scrolling enabled for the whole page */
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-background);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-muted);
+  }
+}
+
+/* Base utility for interactive glassmorphism */
+@layer utilities {
+  .glass {
+    background: rgba(23, 23, 23, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .glass-hover:hover {
+    background: rgba(38, 38, 38, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
