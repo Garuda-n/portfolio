@@ -55,9 +55,21 @@
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.05);
   }
-  
+
   .glass-hover:hover {
     background: rgba(38, 38, 38, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
+}
+
+/* Ambient wave background — layered SVG waves scrolling seamlessly along the bottom */
+@keyframes wave-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-wave-scroll {
+  animation-name: wave-scroll;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
