@@ -66,7 +66,7 @@ export const projects = [
   },
   {
     id: "ai-chatbot",
-    title: "Local AI Chatbot",
+    title: "AI Chatbot",
     tagline: "React-based Interface for Local LLMs",
     description: "A modern web application integrating local Artificial Intelligence capabilities directly into a responsive UI without relying on cloud APIs.",
     coreTech: ["React", "Vite", "Axios", "Ollama", "Local LLM"],
