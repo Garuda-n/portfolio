@@ -12,7 +12,7 @@ export const experience = [
     id: "exp-2",
     role: "PHP Developer",
     company: "[PLACEHOLDER COMPANY]",
-    period: "2014 - 2025",
+    period: "2024 - 2025",
     type: "Web Application Management",
     description: "Developed and maintained database-driven applications. Handled software implementation, testing, technical support, and business workflow development for various client projects.",
     technologies: ["PHP", "JavaScript", "jQuery", "SQL"]
